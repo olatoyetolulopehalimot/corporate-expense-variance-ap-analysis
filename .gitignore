@@ -1,0 +1,14 @@
+
+# Microsoft Excel & Office Temporary Files
+
+~$*
+*.tmp
+*.bak
+
+# Operating System & Editor Clutter
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
