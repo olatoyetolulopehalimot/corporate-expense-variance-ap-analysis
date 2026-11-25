@@ -3,35 +3,37 @@
 
 Prepared By: Tolulope Olatoye Halimot
 Domain: Management Accounting, Cost Control & Accounts Payable Governance
-Tools Used: Microsoft Excel (SUMIFS, COUNTIFS, Dynamic Dashboards), Financial Modeling, Data Auditing
+Tools Used: Microsoft Excel (SUMIFS, COUNTIFS, IFERROR, Interactive Slicers), Financial Modeling, Data Auditing
 
 # 📌 Project Overview
 
-This capstone project audits 2,400 corporate General Ledger (GL) expense vouchers totaling $9.11M in actual expenditure against a $9.06M baseline budget across six fiscal quarters (2025-Q1 to 2026-Q2).
-By analyzing departmental budget variances, vendor concentration, and Accounts Payable (AP) aging schedules, this project identifies structural cost overruns and working capital bottlenecks—providing actionable internal controls projected to recover over $140K annually.
+A multi-dimensional General Ledger audit of 2,400 corporate expense vouchers (GL-10001 to GL-12400) totaling $8.89M in actual expenditure against an $8.76M approved budget across six fiscal quarters (2025-Q1 – 2026-Q2).
+This project isolates departmental budget overruns, top unfavorable GL expense accounts, and Accounts Payable (AP) aging bottlenecks—proposing actionable internal controls projected to recover $140K+ annually.
 
 # 📊 Key Financial KPIs
 
-• Total Actual Spend: $9,112,497.81 (vs. $9,064,260.69 Approved Budget)
-• Net Budget Variance: +$48,237.12 (+0.53% Unfavorable Overrun)
-• AP Settlement Rate: 66.8% ($6.09M Paid on Time)
-• Overdue Payables (30+ Days): $875,169.91 (9.6% of Total Liabilities)
-• Disputed & Pending Invoices: $541.8K Disputed | $1.61M Pending Approval
+• Total Actual Spend: $8.89M (vs. $8.76M Approved Budget)
+• Net Budget Variance: +$135.6K (+1.55% Unfavorable Overrun)
+• AP Settlement Rate: 68.5% ($6.09M Paid & Reconciled)
+• Overdue Payables (30+ Days): $0.82M (9.2% of Total Liabilities)
+• Pending & Disputed Liabilities: $1.43M (16.1%) Pending Approval | $0.55M (6.2%) Disputed
 
 # 🔍 Core Analytical Findings
 
-1. Departmental Overruns Masked by Support Savings: Unfavorable variances are driven by IT & Cloud Infrastructure (+$52.3K / +2.27%), Sales & Marketing (+$43.3K / +2.17%), and Operations & Logistics (+$36.3K / +1.24%), partially hidden at the enterprise level by budget savings in Finance & Legal (-$54.3K) and Human Resources (-$29.3K).
-2. Primary Cost Drivers: Uncontrolled AWS/Azure auto-scaling, Q4 seasonal digital ad spikes, and spot freight surcharges account for the bulk of unfavorable variances.
-3. Working Capital Friction: Nearly one-third (31.9%) of total invoiced value remains unsettled, driven by approval bottlenecks ($1.61M stuck in Pending Approval) and billing disputes with key suppliers (Apex Cloud Solutions, Global Freight Partners, and Summit Media Agency).
+1. Departmental Budget Variance: IT & Cloud Infrastructure (+7.0% overrun; $2.01M spend) and Operations & Logistics (+3.0% overrun; $3.15M spend) drive the net unfavorable variance, whereas Finance & Legal (-6.0%) and Human Resources (-4.0%) generated offsetting cost savings.
+2. Top Unfavorable GL Accounts: Hardware & Licensing (+$51.2K), Cybersecurity & Audits (+$44.7K), Cloud Hosting & SaaS (+$41.9K), and Equipment Lease (+$39.2K) account for the largest line-item overruns.
+3. Working Capital & AP Aging: While 68.5% of total expenditure is settled, $0.82M sits in Overdue (30+ Days) status—requiring automated three-way PO matching and stricter payment-term enforcement to avoid vendor penalties.
 
 # 🛡️ Recommended Internal Controls
 
-• Cloud & SaaS Governance: Automated budget alerts at 80% utilization and CFO sign-off for unbudgeted compute scaling (Est. Impact: Recover $35K–$50K/yr).
-• 3-Way PO Matching: Mandatory Purchase Order, Goods Receipt, and Invoice matching for Freight and Marketing invoices over $2,500 (Est. Impact: Cut disputes by 70%+).
-• 5-Day AP Approval SLA: Automatic escalation to the Controller at Day 10 (Est. Impact: Reduce 30+ day overdue payables from 9.6% to under 4%).
+• Cloud & Licensing Governance: Enforce automated budget alerts at 80% utilization and CFO sign-off for non-contracted scaling (Est. Impact: Recover $35K–$50K/yr).
+• 3-Way PO Matching: Mandate Purchase Order, Goods Receipt, and Invoice matching for high-value IT, Equipment, and Freight vouchers (Est. Impact: Cut disputes by 70%+).
+• 5-Day AP Approval SLA: Implement automatic escalation to the Controller on Day 10 (Est. Impact: Cut 30+ day overdue payables below 4%).
+• Pre-Quarter Q4 Budget Locks: Lock IT and Supply Chain budgets ahead of Q4 vendor renewals and client events.
 
 # 📂 Repository Files
 
-• Accounting_Expense_AP_Dashboard_Tolulope_Olatoye_Halimot-v2.xlsx — Interactive Excel dashboard built with dynamic SUMIFS and COUNTIFS formulas.
-• Corporate_Expense_AP_Dataset_Tolulope_Olatoye_Halimot.csv — Clean, structured 2,400-row General Ledger dataset across 5 cost centers, 15 GL accounts, and 8 vendors.
-• Corporate_Expense_Variance_AP_Control_Report.pdf — Full 9-page executive audit report and visual synthesis.
+• Corporate_Expense_AP_Dashboard_Matched.xlsx — Interactive Excel dashboard with 4 dropdown slicers, native charts, and dynamic SUMIFS/COUNTIFS engine across all 2,400 vouchers.
+• Corporate_Expense_AP_Dataset_Tolulope_Olatoye_Halimot.csv — Clean, structured 2,400-row General Ledger dataset (GL-10001 to GL-12400) across 5 departments, 15 GL accounts, and 8 vendors.
+• Corporate_Expense_Variance_AP_Dashboard.pdf — Executive 1-page visual dashboard and internal control summary.
+• Corporate_Expense_Variance_AP_Control_Report_Matched.pdf — Full 9-page executive audit report.
